@@ -1,2 +1,3 @@
 # Void
-Scripts for my void system
+!!!!! DONT USE THIS SCRIPT !!!!!
+this isn't finished
