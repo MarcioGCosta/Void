@@ -13,7 +13,7 @@
 
 
 ## Installing misc progams
-sudo xbps-install -Su elogind feh zsh-syntax-highlighting zsh-autosuggestions libvdpau-va-gl curl make pulsemixer qbittorrent bspwm redshift sxhkd xorg-server-common xorg-minimal ufw xinit polkit polkit-elogind dbus-elogind ntp wireplumber firefox kitty mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driver rofi playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim doas yarn pnpm wl-clipboard xf86-video-intel
+sudo xbps-install -Su elogind feh zsh-syntax-highlighting zsh-autosuggestions libvdpau-va-gl curl make pulsemixer qbittorrent bspwm redshift sxhkd xorg-server-common xorg-minimal ufw xinit polkit polkit-elogind dbus-elogind ntp wireplumber firefox kitty mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driver rofi playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim opendoas yarn pnpm wl-clipboard xf86-video-intel
 
 ## Moving folders
 mv $HOME/Void/config/.config/ $HOME/ mv $HOME/Void/config/.zshrc /$HOME/.zshrc && mv $HOME/Void/config/.config /$HOME/ && sudo mv $HOME/Void/background/* $HOME/.config  &&  mv $HOME/Void/config/.zshnev /$HOME/ && mv 
