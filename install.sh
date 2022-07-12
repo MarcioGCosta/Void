@@ -16,8 +16,8 @@
 sudo xbps-install -Su elogind feh zsh-sytax-highlighting zsh-autosuggestions libvdpau-va-gl curl make pulsemixer qbittorrent bspwm redshift sxhkd xorg-server-common xorg-minimal ufw xinit polkit polkit-elogind dbus-elogind ntp wireplumber firefox kitty mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driverrofi playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim doas yarn pnpm wl-clipboard xf86-video-intel
 
 ## Moving folders
-mv $HOME/Void/config/.config/ $HOME/ mv $HOME/Void/config/.zshrc /$HOME/.zshrc && mv $HOME/Void/config/.config /$HOME/ && sudo mv $HOME/Void/background/* $HOME/.config  &&  mv $HOME/Void/config/.zshnev /$HOME/
-
+mv $HOME/Void/config/.config/ $HOME/ mv $HOME/Void/config/.zshrc /$HOME/.zshrc && mv $HOME/Void/config/.config /$HOME/ && sudo mv $HOME/Void/background/* $HOME/.config  &&  mv $HOME/Void/config/.zshnev /$HOME/ && mv 
+$HOME/Void/config/.xinitrc
 ## Installing vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
