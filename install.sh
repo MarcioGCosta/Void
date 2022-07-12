@@ -13,10 +13,10 @@
 
 
 ## Installing misc progams
-yes | sudo xbps-install -Su git elogind feh zsh-sytax-highlighting zsh-autosuggestions libvdpau-va-gl curl make pulsemixer qbittorrent sway ufw polkit polkit-elogind dbus-elogind ntp wireplumber firefox waybar kitty mpv yt-dlp pipewire papirus-icon-theme pipewire-alsa libva-intel-driver bemenu playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim doas yarn pnpm wl-clipboard
+yes | sudo xbps-install -Su git elogind feh zsh-sytax-highlighting zsh-autosuggestions libvdpau-va-gl curl make pulsemixer qbittorrent bspwm redshift sxhkd xorg-server-common xorg-minimal ufw xinit polkit polkit-elogind dbus-elogind ntp wireplumber firefox kitty mpv yt-dlp pipewire papirus-icon-theme alsa-pipewire libva-intel-driver dmenu playerctl dash go zsh noto-fonts-emoji font-ibm-plex-ttf xorg-fonts neovim doas yarn pnpm wl-clipboard xf86-video-intel
 
 ## Moving folders
-mv $HOME/Void/config/.zshrc /$HOME/.zshrc && mv $HOME/Void/config/.config /$HOME/ && sudo mv $HOME/Void/background/* /usr/share/Backgrounds/  &&  mv $HOME/Void/config/.zshnev /$HOME/
+mv $HOME/Void/config/.zshrc /$HOME/.zshrc && mv $HOME/Void/config/.config /$HOME/ && sudo mv $HOME/Void/background/* $HOME/.config  &&  mv $HOME/Void/config/.zshnev /$HOME/
 
 ## Installing vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -33,7 +33,6 @@ sudo chsh -s /usr/bin/zsh marcioc
 sudo cp -r $HOME/.config/nvim/ /root/.config/
 
 ## Symlinking shit
-sudo ln -s /etc/sv/elogind /var/service
+sudo ln -s /etc/sv/polkit /var/service
 sudo ln -s /etc/sv/dbus /var/service
 
-sudo reboot
