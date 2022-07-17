@@ -6,6 +6,9 @@ sudo xbps-install -Su nerd-fonts-ttf picom polybar setxkbmap xrandr elogind feh 
 ## Moving folders
 mv $HOME/Void/config/.config/ $HOME/.config && mv $HOME/Void/config/.zshrc /$HOME/.zshrc && mv $HOME/Void/background/ $HOME/.config/ && mv $HOME/Void/config/.zshnev /$HOME/.zshnev && mv $HOME/Void/config/.xinitrc $HOME/.xinitrc 
 
+## xorg  configuration
+sudo mv $HOME/Arch-Linux/config/20-intel-gpu.conf /etc/X11/xorg.conf.d/
+
 ## Installing vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
